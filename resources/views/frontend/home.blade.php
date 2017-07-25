@@ -12,7 +12,7 @@
                 <p>Based on our strong assets and facilities, we have been motivated to start our first service providing in 2016, and then with many more service from the start to the end. We would like our customer to rest assured and let us take care of the rest for you. We are in term of the company, but we have talented and experienced learn here to ensure a high quality service being deliver and statified to our customer.</p>
                 <p>We are doing our best as a responsible business partner and a customer focused service provider to bring value and solution to your business development as well as ours.</p>
             </div>
-            <img src="{{asset('/img/car-container.jpg')}}">
+            <img src="{{asset('/img/car-container.jpg')}}" class="img-fluid" alt="Responsive image">
         </div>
     </div>
 </section>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div>
-                        <img src="{{asset('/img/placeholder-1e385d52942ef11d42405be4f7d0a30d.jpg')}}" style="width:428px;">
+                        <img src="{{asset('/img/placeholder-1e385d52942ef11d42405be4f7d0a30d.jpg')}}" style="width:428px;" class="img-fluid" alt="Responsive image">
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div>
-                        <img src="{{asset('/img/placeholder-1e385d52942ef11d42405be4f7d0a30d.jpg')}}" style="width:428px;">
+                        <img src="{{asset('/img/placeholder-1e385d52942ef11d42405be4f7d0a30d.jpg')}}" style="width:428px;" class="img-fluid" alt="Responsive image">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div>
-                        <img src="{{asset('/img/placeholder-1e385d52942ef11d42405be4f7d0a30d.jpg')}}" style="width:428px;">
+                        <img src="{{asset('/img/placeholder-1e385d52942ef11d42405be4f7d0a30d.jpg')}}" style="width:428px;" class="img-fluid" alt="Responsive image">
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div>
-                        <img src="{{asset('/img/placeholder-1e385d52942ef11d42405be4f7d0a30d.jpg')}}" style="width:428px;">
+                        <img src="{{asset('/img/placeholder-1e385d52942ef11d42405be4f7d0a30d.jpg')}}" style="width:428px;" class="img-fluid" alt="Responsive image">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
