@@ -1,0 +1,314 @@
+
+
+@mixin mypadding($value) {
+	-webkit-padding-top: $value;
+	-moz-padding-top: $value;
+	-ms-padding-top: $value;
+	padding-top:$value;
+}
+html{
+	font-size: 16px;
+	@include mediaQuery(767px){
+		font-size: 14px;
+	}
+}
+
+body{
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	&.lang_kh{
+		font-family: "Hanuman","Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	}
+	overflow-x: hidden;
+	p{
+		letter-spacing: 0.5px;
+	}
+}
+
+html, body, header{
+	height: 100%;
+}
+
+.simple-nav-bar{
+	transition: background-color .3s ease;
+	padding:0.5em 15px;
+	.navbar-brand{
+		padding-left: 40px;
+		a{
+			display: block;
+			padding-top: 6px;
+		}
+	}
+	.navbar{
+		height: auto;
+		max-width:1250px;
+	}
+
+	&.nav-bar-white-bg{
+		background-color: #2e3236 !important;
+		box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
+		.navbar-nav{
+			.nav-link{
+				color: white !important;
+			}
+		}
+		.active{
+			border:1px solid white;
+		}
+	}
+	.active{
+		border:1px solid white;
+	}
+
+
+	@include mediaQuery(767px){
+		background-color: rgba(39, 39, 39, 0.81);
+		.navbar-brand{
+			margin-bottom: 15px;
+		}
+		.navbar{  
+			padding-bottom: 0; 
+		}
+		.navbar-toggler{
+			// margin-top: 5px;
+			margin-right: 10px;
+			background: none;
+			span{
+			    font-size: 30px;
+			    color: white;
+			}
+		}
+		[class^="navbar-toggleable-"]{
+			background-color: rgba(0, 0, 0, 0.18);
+			>.nav{
+				border: none !important;
+			}
+		}
+	}
+}
+.slash{
+	height:100%;
+
+	.layer{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// background-color: #2e3236;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+	}
+	.header{
+		text-align: center;
+    	// padding-top: 180px;
+		@include mediaQuery(767px){
+			p{
+				font-size:2rem;
+				color: $mainCol;
+				font-weight: bold;
+			}
+		}
+		p{
+			font-size:4rem;
+			color: $mainCol;
+			font-weight: bold;
+		}
+	}
+	.nor-text{
+		text-align:center;
+		padding-top: 80px;
+		p{
+			max-width: 686px;
+			margin: auto;
+			font-size: 1rem;
+			color: white;
+			background-color: #3a3b3a;
+			padding: 20px 20px;
+			letter-spacing: 2px;
+		}
+	}
+	.sub-header{
+		text-align: center;
+		p{
+			font-size: 4rem;
+			font-weight: 300;
+			color:white;
+			line-height: 98px;
+		}
+		.button{
+			font-size: 1.5rem;
+	   		padding: 15px 23px;
+			width: 200px;
+			left: 50%;
+			bottom: 12%;
+			top: inherit;
+			transform: translate(-50%);
+			display: block;
+			position: absolute;
+			background-color: gold;
+			outline: 0;
+			box-shadow: 2px 2px 2px black;
+			opacity: 1;
+			margin: auto;
+			-webkit-transition: .3s linear;
+			transition: .3s linear;
+			transition-property: opacity;
+			p{
+				color: black;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 17px;
+				text-transform: uppercase;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.blog{
+	text-align:center;
+	margin:0 auto; 
+	.title{
+		@include mypadding(46px);
+		padding-bottom: 20px;
+		text-align: center;
+		p{
+			font-size:2.2rem;
+			color:black;
+		}
+		hr{
+			max-width:4.5%;
+			background-color: $mainCol;
+			height:1px;
+		}
+	}
+	.sub-title{
+		p{
+			font-size:1.5rem;
+			margin:0!important;
+		}
+	}
+	.container-raw{
+		padding-top:160px;
+		.more{
+			text-transform: uppercase;
+			display: block;
+			outline: 0;
+			cursor: pointer;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-moz-osx-font-smoothing: grayscale;
+			position: relative;
+			padding-right: 10px;
+			margin: 0 auto;
+			font-size: 14px;
+			color: $mainCol;
+			font-weight: 700;
+			margin: 40px 0 0;
+			text-decoration: none;
+			@include mediaQuery(375px){
+				padding-right: 17px;
+			}
+			>span{
+				padding-left: 1px;
+				font-weight: 700;
+			    transition: padding-left .3s linear;
+			}
+
+			&:hover{
+				>span{
+					padding-left: 10px;
+				}
+			}
+		}
+	}
+}
+.Intern-home{
+	padding:50px 0 50px 0;
+	&:first-child{
+		background-color: aliceblue;
+	}
+	.about{
+		.about-header{
+			padding:0 0 20px 0;
+			h5{
+				.gold{
+					color:gold;
+				}
+			}
+		}
+		img{
+			max-width: 925px;
+		}
+	}
+	.Product{
+		.header{
+			padding-bottom:10px;
+			h4{
+				text-align: center;
+				color:gold;
+			}
+			hr{
+				width:15%;
+			}
+		}
+		.sub-header{
+			color:cornflowerblue;
+		}
+		.row{
+			padding:60px 0 60px 0;
+		}
+		hr{
+			width:10%;
+		}
+	}
+	h2{
+		color: gold;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.icon-group{
+		text-align: center;
+		padding-top: 40px;
+		ul{
+			-webkit-padding-start: 0;
+			li{
+				list-style:none;
+				display: inline-block;
+				font-size: 45px;
+				letter-spacing: 30px;
+				color: cornflowerblue;
+				cursor: pointer;
+			}
+		}
+	}
+}
+.foot-request{
+	text-align: center;
+	padding: 70px 0 70px 0;
+	background-image: url('/img/wharehouse.jpg');
+	background-size: cover;
+	background-repeat: round;
+	.quote-request{
+		.paragraph{
+			p{
+				max-width: 656px;
+				margin: auto;
+				font-weight: 500;
+				color: white;
+			}
+		}
+	}
+	.Q-button{
+		padding-top: 40px;
+		.button{
+			background-color: gold;
+			padding: 15px 40px;
+			color:black;
+			box-shadow: 2px 2px 2px 2px black;
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+	}
+}
