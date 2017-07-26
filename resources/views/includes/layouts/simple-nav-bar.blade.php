@@ -130,13 +130,15 @@
 
 
 <section class="slash padding-section big-padding section-bg-gray display-flex flex-center"  style="background-image:url('{{asset('/img/'. $slideByPage['img'] )}}'); background-size:cover; background-position: center center;">
-<div class="layer">
+
    <div class="max-container no-padd">
         <div class="header">
             <p class="_title text-center en">{{ $slideByPage['header'] }}</p>
         </div>
-        <div class="nor-text">
-            <p class="_title text-center en">{{ $slideByPage['nor-text'] }}</p>
+        <div class="layer">
+            <div class="nor-text">
+                <p class="_title text-center en">{{ $slideByPage['nor-text'] }}</p>
+            </div>
         </div>
         @if($slideByPage['text'])
         <div class="sub-header">
@@ -156,7 +158,7 @@
       </div>
       @endif
    </div>
-</div>
+
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     {{-- <script>
         $(document).ready(function (){
